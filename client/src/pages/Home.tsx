@@ -1,25 +1,33 @@
-import { Button } from "@/components/ui/button";
-import { Loader2 } from "lucide-react";
-import { Streamdown } from 'streamdown';
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import Services from "@/components/Services";
+import About from "@/components/About";
+import CTA from "@/components/CTA";
+import Footer from "@/components/Footer";
 
 /**
- * All content in this page are only for example, replace with your own feature implementation
- * When building pages, remember your instructions in Frontend Best Practices, Design Guide and Common Pitfalls
+ * Home Page
+ * Design: Elegância Corporativa Moderna
+ * 
+ * Estrutura:
+ * 1. Header - Navegação fixa
+ * 2. Hero - Seção de impacto com CTA
+ * 3. Services - Grade de serviços com imagens
+ * 4. About - Informações sobre a empresa
+ * 5. CTA - Chamada para ação com contato
+ * 6. Footer - Rodapé com links e informações
  */
 export default function Home() {
-  // If theme is switchable in App.tsx, we can implement theme toggling like this:
-  // const { theme, toggleTheme } = useTheme();
-
   return (
-    <div className="min-h-screen flex flex-col">
-      <main>
-        {/* Example: lucide-react for icons */}
-        <Loader2 className="animate-spin" />
-        Example Page
-        {/* Example: Streamdown for markdown rendering */}
-        <Streamdown>Any **markdown** content</Streamdown>
-        <Button variant="default">Example Button</Button>
+    <div className="min-h-screen flex flex-col bg-white">
+      <Header />
+      <main className="flex-1">
+        <Hero />
+        <Services />
+        <About />
+        <CTA />
       </main>
+      <Footer />
     </div>
   );
 }
