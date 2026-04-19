@@ -25,10 +25,10 @@ export default function Header() {
         {/* Logo */}
         <div className="flex items-center gap-2">
           <div className="w-8 h-8 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
-            <span className="text-white font-playfair font-bold text-lg">P</span>
+            <span className="text-white font-playfair font-bold text-lg">EM</span>
           </div>
           <span className="font-playfair font-bold text-lg text-foreground hidden sm:inline">
-            Portfolio
+            Emeson Mikael
           </span>
         </div>
 
@@ -46,12 +46,18 @@ export default function Header() {
         </nav>
 
         {/* CTA Button - Desktop */}
-        <Button
-          className="hidden md:inline-flex bg-primary hover:bg-primary/90 text-white font-lato"
-          size="sm"
+        <a
+          href="https://wa.me/5584999558001"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          Solicitar Orçamento
-        </Button>
+          <Button
+            className="hidden md:inline-flex bg-primary hover:bg-primary/90 text-white font-lato"
+            size="sm"
+          >
+            WhatsApp
+          </Button>
+        </a>
 
         {/* Mobile Menu Button */}
         <button
@@ -80,9 +86,16 @@ export default function Header() {
                 {link.label}
               </a>
             ))}
-            <Button className="w-full bg-primary hover:bg-primary/90 text-white font-lato mt-2">
-              Solicitar Orçamento
-            </Button>
+            <a
+              href="https://wa.me/5584999558001"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full"
+            >
+              <Button className="w-full bg-primary hover:bg-primary/90 text-white font-lato mt-2">
+                WhatsApp
+              </Button>
+            </a>
           </nav>
         </div>
       )}

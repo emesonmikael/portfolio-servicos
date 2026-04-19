@@ -17,7 +17,7 @@ export default function Hero() {
         <div className="flex flex-col gap-6">
           <div className="space-y-4">
             <h1 className="text-5xl md:text-6xl font-playfair font-bold text-foreground leading-tight">
-              Soluções Integradas para Seu Negócio
+              Emeson Mikael - Soluções Integradas
             </h1>
             <p className="text-lg text-muted-foreground font-lato leading-relaxed">
               Eletricidade, manutenção de computadores, desenvolvimento web, Web3, smart contracts e muito mais. Tudo em um único lugar, com profissionalismo e qualidade.
@@ -26,20 +26,29 @@ export default function Hero() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
-            <Button
-              size="lg"
-              className="bg-primary hover:bg-primary/90 text-white font-lato font-medium group"
+            <a href="#services" className="w-full sm:w-auto">
+              <Button
+                size="lg"
+                className="w-full bg-primary hover:bg-primary/90 text-white font-lato font-medium group"
+              >
+                Explorar Serviços
+                <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </a>
+            <a
+              href="https://wa.me/5584999558001"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto"
             >
-              Explorar Serviços
-              <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-border text-foreground hover:bg-secondary font-lato font-medium"
-            >
-              Entrar em Contato
-            </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="w-full border-border text-foreground hover:bg-secondary font-lato font-medium"
+              >
+                Entrar em Contato
+              </Button>
+            </a>
           </div>
 
           {/* Trust Indicators */}

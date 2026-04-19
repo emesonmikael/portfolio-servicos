@@ -113,10 +113,15 @@ export default function Services() {
                 <p className="text-muted-foreground font-lato leading-relaxed">
                   {service.description}
                 </p>
-                <button className="text-primary font-lato font-medium hover:text-primary/80 transition-colors inline-flex items-center gap-2 pt-2">
+                <a
+                  href="https://wa.me/5584999558001?text=Ol%C3%A1%20Emeson!%20Gostaria%20de%20saber%20mais%20sobre%20o%20servi%C3%A7o%20de%20${service.title}"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary font-lato font-medium hover:text-primary/80 transition-colors inline-flex items-center gap-2 pt-2"
+                >
                   Saiba mais
                   <span className="group-hover:translate-x-1 transition-transform">→</span>
-                </button>
+                </a>
               </div>
             </Card>
           ))}

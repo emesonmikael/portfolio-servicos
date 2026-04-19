@@ -21,9 +21,9 @@ export default function Footer() {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 bg-gradient-to-br from-accent to-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-playfair font-bold">P</span>
+                <span className="text-white font-playfair font-bold">EM</span>
               </div>
-              <span className="font-playfair font-bold text-lg">Portfolio</span>
+              <span className="font-playfair font-bold text-lg">Emeson Mikael</span>
             </div>
             <p className="text-sm text-white/70 font-lato leading-relaxed">
               Soluções integradas para seu negócio. Eletricidade, TI, Web e Blockchain.
@@ -89,20 +89,14 @@ export default function Footer() {
             <h3 className="font-playfair font-bold text-white">Contato</h3>
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2">
-                <Mail className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
-                <a href="mailto:contato@portfolio.com" className="text-white/70 hover:text-accent transition-colors font-lato">
-                  contato@portfolio.com
-                </a>
-              </li>
-              <li className="flex items-start gap-2">
                 <Phone className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
-                <a href="tel:+5511999999999" className="text-white/70 hover:text-accent transition-colors font-lato">
-                  (11) 9 9999-9999
+                <a href="https://wa.me/5584999558001" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-accent transition-colors font-lato">
+                  (84) 99955-8001
                 </a>
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
-                <span className="text-white/70 font-lato">São Paulo, SP</span>
+                <span className="text-white/70 font-lato">Sítio Vaca Morta, Marcelino Vieira - RN</span>
               </li>
             </ul>
           </div>
@@ -115,7 +109,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           {/* Copyright */}
           <p className="text-sm text-white/60 font-lato">
-            &copy; {currentYear} Portfolio de Serviços. Todos os direitos reservados.
+            &copy; {currentYear} Emeson Mikael - Todos os direitos reservados.
           </p>
 
           {/* Social Links */}
