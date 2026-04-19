@@ -114,7 +114,7 @@ export default function Services() {
                   {service.description}
                 </p>
                 <a
-                  href="https://wa.me/5584999558001?text=Ol%C3%A1%20Emeson!%20Gostaria%20de%20saber%20mais%20sobre%20o%20servi%C3%A7o%20de%20${service.title}"
+                  href={`https://wa.me/5584999558001?text=Olá%20Emeson!%20Gostaria%20de%20saber%20mais%20sobre%20o%20serviço%20de%20${encodeURIComponent(service.title)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-primary font-lato font-medium hover:text-primary/80 transition-colors inline-flex items-center gap-2 pt-2"
